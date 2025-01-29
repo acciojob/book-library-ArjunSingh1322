@@ -1,16 +1,92 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+	body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Book library container */
+.book-library {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual book block */
+.book {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Book image */
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Book title */
+.book h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+/* Author name */
+.book .author {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Price block */
+.book .price {
+    color: #2ecc71;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="book-library">
+        <div class="book">
+            <img src="" alt="Spy in the Amber">
+            <h2>Spy in the Amber</h2>
+            <p class="author">By Manohar Malgonkar</p>
+            <p class="price">$10.99</p>
+        </div>
 
+        <div class="book">
+            <img src="sacred-games.jpg" alt="Sacred Games">
+            <h2>Sacred Games</h2>
+            <p class="author">By Vikram Chandra</p>
+            <p class="price">$14.99</p>
+        </div>
+
+        <div class="book">
+            <img src="byomkesh-bakshi.jpg" alt="Byomkesh Bakshi">
+            <h2>Byomkesh Bakshi</h2>
+            <p class="author">By Sharadindu Bandyopadhyay</p>
+            <p class="price">$9.99</p>
+        </div>
+    </div>
 </body>
-
 </html>
